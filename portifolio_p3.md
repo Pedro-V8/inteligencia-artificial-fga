@@ -4,6 +4,24 @@ Nessa terceira parte do portifólio, serão apresentados e discutidos tópicos p
 
 # Apresentação do Conteúdo
 
+## Representação Atômica vs. Fatorada
+...
+
+## Definindo Problemas de Satisfação de Condições
+...
+
+## Tipos de condições
+...
+
+## Consistência
+...
+
+## Algoritmos
+...
+
+## Estrutura de problemas
+...
+
 # Discussões
 
 # Projetos e Problemas
