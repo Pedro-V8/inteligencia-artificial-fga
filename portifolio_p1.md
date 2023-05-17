@@ -22,23 +22,23 @@ Mas na década de 1980, os sistemas especialistas foram desenvolvidos, permitind
 
 A partir de 1986, as redes neurais retornaram com força total, permitindo que as máquinas aprendessem a partir de dados e reconhecessem padrões. O raciocínio probabilístico e o aprendizado de máquina também foram desenvolvidos nesta época, permitindo que as máquinas tomassem decisões baseadas em probabilidades e experiências passadas.
 
-Com o advento do Big Data em 2001, a IA tornou-se capaz de analisar enormes quantidades de dados e encontrar padrões que seriam impossíveis de serem detectados pelo ser humano. E desde 2011, o Deep Learning, uma técnica de IA baseada em redes neurais profundas, tem impulsionado o desenvolvimento da área, permitindo que as máquinas realizem tarefas complexas, como reconhecimento de fala e de imagem, com uma precisão sem precedentes.
+Com o advento do Big Data em 2001, a Inteligência Artificial tornou-se capaz de analisar enormes quantidades de dados e encontrar padrões que seriam impossíveis de serem detectados pelo ser humano. E desde 2011, o Deep Learning, uma técnica de IA baseada em redes neurais profundas, tem impulsionado o desenvolvimento da área, permitindo que as máquinas realizem tarefas complexas, como reconhecimento de fala e de imagem, com uma precisão sem precedentes.
 
-Em suma, a história da IA é uma história de altos e baixos, mas com muitos avanços significativos ao longo dos anos. Hoje, a IA está presente em várias áreas da vida, desde assistentes virtuais até carros autônomos, e continua a evoluir rapidamente.
+Em suma, é uma história de altos e baixos, mas com muitos avanços significativos ao longo dos anos. Hoje, a IA está presente em várias áreas da vida, desde assistentes virtuais até carros autônomos, e continua a evoluir rapidamente.
 
 ## Estado da Arte, Benefícios e Riscos
 
 A Inteligência Artificial tem avançado rapidamente nas últimas décadas e atualmente desempenha um papel importante em diversas áreas da sociedade. O estado atual da IA é estudado pela iniciativa AI100 da Universidade Stanford, que tem como objetivo realizar um estudo de 100 anos sobre a evolução da IA.
 
-Hoje em dia, a IA é capaz de realizar tarefas que antes só eram possíveis para os seres humanos, como reconhecimento de fala e imagem, tradução de idiomas, diagnóstico médico e previsão de resultados financeiros. A IA também tem sido amplamente utilizada na indústria, otimizando processos de produção, logística e atendimento ao cliente.
+Hoje em dia, ela é capaz de realizar tarefas que antes só eram possíveis para os seres humanos, como reconhecimento de fala e imagem, tradução de idiomas, diagnóstico médico e previsão de resultados financeiros. Também tem sido amplamente utilizada na indústria, otimizando processos de produção, logística e atendimento ao cliente.
 
 No entanto, junto com esses benefícios, ela também apresenta riscos significativos. Um dos maiores riscos é a perda de empregos, pois muitas tarefas que antes eram executadas por humanos agora são realizadas por máquinas. Isso pode levar a uma desigualdade socioeconômica e a problemas de ajuste para trabalhadores que precisam se adaptar a novas formas de trabalho.
 
 Além disso, a IA também pode levar a vieses e discriminação, pois as máquinas são programadas por humanos e, portanto, podem perpetuar preconceitos e estereótipos. Também há preocupações em relação à privacidade e segurança dos dados, pois a com ela é capaz de coletar e analisar enormes quantidades de informações.
 
-No entanto, a IA também pode trazer muitos benefícios para a sociedade. A IA pode ajudar a resolver problemas complexos, como mudanças climáticas e doenças, ao permitir que os pesquisadores analisem grandes quantidades de dados e descubram novos insights. A IA também pode ser utilizada para melhorar a qualidade de vida das pessoas, com aplicações em saúde, transporte e educação.
+No entanto, a IA pode trazer muitos benefícios para a sociedade. A IA pode ajudar a resolver problemas complexos, como mudanças climáticas e doenças, ao permitir que os pesquisadores analisem grandes quantidades de dados e descubram novos insights. A IA também pode ser utilizada para melhorar a qualidade de vida das pessoas, com aplicações em saúde, transporte e educação.
 
-Em resumo, a IA é uma tecnologia que oferece muitos benefícios, mas também apresenta riscos significativos. É importante que a sociedade se preocupe em desenvolver a IA de forma ética e responsável, minimizando seus riscos e maximizando seus benefícios. A iniciativa AI100 da Universidade Stanford é uma maneira de monitorar e compreender o progresso da IA, garantindo que ela seja desenvolvida para melhorar a vida humana.
+Em resumo, Inteligência Artificial é uma tecnologia que oferece muitos benefícios, mas também apresenta riscos significativos. É importante que a sociedade se preocupe em desenvolver a IA de forma ética e responsável, minimizando seus riscos e maximizando seus benefícios. A iniciativa AI100 da Universidade Stanford é uma maneira de monitorar e compreender o progresso da IA, garantindo que ela seja desenvolvida para melhorar a vida humana.
 
 ## Agentes e ambientes
 Um dos conceitos fundamentais da IA é o de agentes e ambiente. Um agente é um sistema que percebe seu ambiente através de sensores e age nele através de atuadores. A ação de um agente pode ser qualquer coisa que altere o ambiente, como mover um robô, imprimir um documento ou enviar um e-mail.
@@ -52,14 +52,13 @@ Em resumo, agentes e ambiente são conceitos fundamentais na IA. Os agentes são
 ## Racionalidade
 A racionalidade em uma Inteligência Artificial é um tema que há muito tempo vem sido bastante debatido. Um agente racional é aquele que toma a melhor ação possível, dadas as informações disponíveis, para alcançar seus objetivos. O objetivo da IA é criar sistemas que sejam capazes de agir racionalmente em diferentes contextos.
 
-No entanto, a racionalidade de uma IA depende da qualidade das informações disponíveis e da função agente utilizada. Se a IA não tem informações completas ou precisas sobre seu ambiente, ou se a função agente está mal formulada, então suas ações podem não ser as melhores possíveis.
+No entanto, a racionalidade vai depender da qualidade das informações disponíveis e da função agente utilizada. Se a IA não tem informações completas ou precisas sobre seu ambiente, ou se a função agente está mal formulada, então suas ações podem não ser as melhores possíveis.
 
-Além disso, a racionalidade de uma IA também pode ser limitada por fatores éticos e sociais. Por exemplo, uma IA pode tomar ação que são tecnicamente corretas, mas que vão contra valores éticos ou prejudicam certos grupos sociais. É importante, portanto, que a IA seja desenvolvida com considerações éticas e sociais em mente, a fim de garantir que suas ações sejam não apenas tecnicamente corretas, mas também socialmente responsáveis.
+Além disso, ela também pode ser limitada por fatores éticos e sociais. Por exemplo, uma IA pode tomar ação que são tecnicamente corretas, mas que vão contra valores éticos ou prejudicam certos grupos sociais. É importante, portanto, que a IA seja desenvolvida com considerações éticas e sociais em mente, a fim de garantir que suas ações sejam não apenas tecnicamente corretas, mas também socialmente responsáveis.
 
 A eficácia da racionalidade depende da qualidade das informações disponíveis e da formulação da função agente utilizada. Além disso, a racionalidade de uma IA também deve ser considerada dentro de um contexto ético e social mais amplo, para garantir que suas ações sejam socialmente responsáveis.
 
 ## Especificando o ambiente de tarefas
-
 
 Ao projetar uma Inteligência Artificial, é importante especificar o ambiente de tarefas em que ela vai operar. O ambiente de tarefas é composto por todos os elementos que interagem com a IA, incluindo os objetivos da tarefa, as informações disponíveis e as ações possíveis. Dois conceitos importantes para a especificação do ambiente de tarefas são a descrição PEAS e as propriedades do ambiente de tarefas.
 
