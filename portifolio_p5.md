@@ -3,7 +3,7 @@
 
 # Introdução
 
-...
+Para essa introdução, serão abordados tópicos relacionados ao tratamento de incertezas em contextos temporais, a quantificação de incertezas e o uso de redes Bayesianas, assim como o raciocínio probabilístico ao longo do tempo e a aplicação dos filtros de Kalman. Também serão discutidos exemplos de casos adicionais sobre os tópicos que serão mostrados a seguir, assim como uma apresentação de um problema e como o filtro de Kalman pode ser uma opção para a solução.
 
 # Apresentação do Conteúdo
 
@@ -20,7 +20,7 @@ Além disso, a ignorância prática é um fator que contribui para a inviabilida
 
 Um exemplo ilustrativo dessa problemática é a relação entre dores de dente e cáries. Essa conexão não pode ser considerada uma consequência lógica estrita em ambas as direções. Ou seja, a lógica pura não é suficiente para estabelecer uma relação causal direta entre esses dois elementos no contexto médico. Existem diversos outros fatores e condições que podem estar envolvidos nessa relação complexa.
 
-Essa realidade não é exclusiva do domínio médico, mas se aplica também a outros campos de julgamento, como direito, negócios, design, reparo automotivo, jardinagem, namoro, entre outros. Nessas áreas, as decisões não podem ser baseadas exclusivamente na lógica pura, devido à complexidade dos problemas, à falta de teorias completas e à incerteza prática inerente. É necessário adotar uma abordagem mais abrangente e flexível, que leve em consideração não apenas a lógica, mas também o conhecimento empírico, a intuição e a experiência.
+Essa realidade não é exclusiva do domínio médico, mas se aplica também a outros campos de julgamento, como direito, negócios, entre outros. Nessas áreas, as decisões não podem ser baseadas exclusivamente na lógica pura, devido à complexidade dos problemas, à falta de teorias completas e à incerteza prática inerente. É necessário adotar uma abordagem mais abrangente e flexível, que leve em consideração não apenas a lógica, mas também o conhecimento empírico, a intuição e a experiência.
 
 ## Utilidade
 A teoria da utilidade, em sua essência, estabelece que todo estado, ou sequência de estados, possui um grau de utilidade para um agente específico. Essa utilidade representa o valor subjetivo que o agente atribui a cada estado, refletindo suas preferências individuais. Consequentemente, o agente tenderá a preferir estados com maior utilidade, uma vez que estes são considerados mais desejáveis.
@@ -160,7 +160,70 @@ Uma das aplicações pioneiras do filtro de Kalman foi na missão Apollo 11, que
 
 # Discussões
 
-...
+Dados os diversos cenários de incertezas, um deles é ceveras interessantes a ser analisado, no qual seria sobre a previsão do tempo, é um exemplo clássico de um problema temporal baseado em incertezas. O clima é influenciado por vários fatores complexos e variáveis, como temperatura, pressão atmosférica, umidade e padrões de vento. A evolução desses fatores ao longo do tempo é incerta, o que torna a previsão do tempo uma tarefa desafiadora. Modelos estatísticos e métodos de simulação são usados para estimar as condições futuras do tempo com base nas informações disponíveis.
+
+No contexto da previsão do tempo, lidar com a incerteza é fundamental para fornecer estimativas precisas e confiáveis das condições climáticas futuras. Existem várias teorias e técnicas que podem ser aplicadas para lidar com essa situação, e uma delas é a teoria dos processos estocásticos, incluindo os modelos de Markov.
+
+Os modelos de Markov são úteis para descrever a evolução temporal de sistemas estocásticos, onde a probabilidade de transição entre estados depende apenas do estado atual. Na previsão do tempo, os modelos de Markov podem ser aplicados para representar a evolução do clima em intervalos discretos de tempo, como a mudança do estado do tempo de ensolarado para nublado ou de chuvoso para ventoso.
 
 # Projetos e Problemas
-...
+Vamos considerar um cenário em que um veículo autônomo está se movendo em uma estrada e suas posições são medidas por um sensor GPS, que está sujeito a erros de medição. O objetivo é estimar a posição e velocidade verdadeiras do veículo com base nas observações ruidosas do GPS.
+
+Segue abaixo o exemplo de código Python utiliando Filtro de Kalman para a situação descrita:
+
+```python
+import numpy as np
+from scipy.linalg import block_diag
+
+# Configuração inicial do filtro de Kalman
+dt = 1.0  # Intervalo de tempo entre as observações
+A = np.array([[1, dt], [0, 1]])  # Matriz de transição de estado
+C = np.array([[1, 0]])  # Matriz de observação
+Q = block_diag(0.1, 0.1)  # Covariância do ruído do processo
+R = 1  # Covariância do ruído de medição
+
+# Inicialização das estimativas
+x = np.array([[0], [0]])  # Vetor de estado inicial
+P = np.eye(2)  # Matriz de covariância do estado inicial
+
+# Função para executar a atualização e a previsão do filtro de Kalman
+def kalman_filter(z):
+    # Atualização (correção)
+    y = z - np.dot(C, x)  # Resíduo de medição
+    S = np.dot(np.dot(C, P), C.T) + R  # Covariância da inovação
+    K = np.dot(np.dot(P, C.T), np.linalg.inv(S))  # Ganho de Kalman
+    x = x + np.dot(K, y)  # Atualização do estado estimado
+    P = np.dot(np.eye(2) - np.dot(K, C), P)  # Atualização da matriz de covariância
+
+    # Previsão
+    x = np.dot(A, x)  # Previsão do estado
+    P = np.dot(np.dot(A, P), A.T) + Q  # Previsão da matriz de covariância
+
+    return x, P
+
+# Simulação de observações ruidosas
+true_position = 100  # Posição verdadeira inicial do veículo
+true_velocity = 30  # Velocidade verdadeira do veículo
+observations = [true_position + np.random.normal(0, 1) for _ in range(100)]  # Observações ruidosas do GPS
+
+# Aplicação do filtro de Kalman para estimar a posição e velocidade
+estimated_states = []
+for z in observations:
+    x, P = kalman_filter(z)
+    estimated_states.append(x[0, 0])  # Estimativa da posição
+
+# Plot dos resultados
+import matplotlib.pyplot as plt
+
+plt.plot(range(len(observations)), observations, label='Observações ruidosas')
+plt.plot(range(len(estimated_states)), estimated_states, label='Estimativa de posição')
+plt.xlabel('Tempo')
+plt.ylabel('Posição')
+plt.legend()
+plt.show()
+
+```
+
+# Conclusão
+
+Vários tópicos foram analiados nessa parte, conceitos como incertezas, modelo oculto de Markov e inferência foram necessários para entender mais sobre o universo das IA´s, assim como demonstração de exemplo no qual filtro de Kalman pode ser aplivável, cada tópico foi importante para obter conhecimentos mais sólidos do conteúdo.
