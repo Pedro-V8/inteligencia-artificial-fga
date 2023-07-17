@@ -1,5 +1,8 @@
+- Nome: Pedro Henrique de Deus Vieira
+- Matrícula: 190044055
+
 # Introdução
-...
+O presente trabalho irá conter tópicos sobre o conteúdo de aprendizado de máquina, passando também por diversos exemplos de algoritmos e técnicas que aprofundam tal conhecimento, além disso, conceitos bastantes comentados hoje em dia como redes neurais e deep learning também serão devidamente conceituados.
 # Apresentação do Conteúdo
 ## Aprendizado de Máquina
 O aprendizado de máquina busca capacitar agentes a melhorarem seu desempenho por meio da observação e análise de dados. Nesse processo, um agente utiliza técnicas e algoritmos para extrair informações relevantes dos dados disponíveis, construindo um modelo que representa uma hipótese sobre o mundo e suas relações.
@@ -163,4 +166,4 @@ print("Acurácia do modelo:", accuracy)
 
 ```
 # Conclusão
-...
+Diversos conceitos foram abordados sobre o universo de aprendizado de máquina, algoritmos de classificação e análise sobre os dados foram mostrados para que se tenha um bom entendimento a cerca do conteúdo. Além disso, algoritmos a respeitos de um tópico sobre classificação para uma melhor perspectiva foram abordados. Esses e diversos outros tópicos se mostraram essenciais para um bom entendimento sobre IA's no geral para acomapnhar todo o desenvolvimento desse universo nos tempos modernos.
